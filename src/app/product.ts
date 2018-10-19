@@ -2,7 +2,7 @@ export class Product {
   sku: number;
   name: string;
   image: string;
-  categories: string;
+  categories: Array<string>;
   price: number;
   date : number;
 }
