@@ -4,5 +4,5 @@ export class Product {
   image: string;
   categories: Array<string>;
   price: number;
-  date : number;
+  date : string;
 }
