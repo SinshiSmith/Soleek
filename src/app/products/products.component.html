@@ -1,21 +1,30 @@
+<div class="header">
+  <h2>Products</h2>
+  <a routerLink="/new">ADD Product</a>
+</div>
+<div class="products-container">
+  <div class="product" *ngFor="let product of products" >
+    <div class="product-image">
+      <img [src]="product.image" alt="apples">
+    </div>
+    <div class="product-info">
+      <h4>
+        {{product.name | uppercase}}
+      </h4>
+      <div><b>ID: </b> {{product.id}} </div>
+      <div><b>Categories: </b> {{product.categories.join(", ")}} </div>
+      <div><b>Price: </b> {{product.price}} </div>
+      <div><b>Date: </b> {{product.date}} </div>
+      <div class="actions">
+        <a routerLink="/edit/{{product.id}}">Edit</a>
 
-<h2>Products</h2>
-<ul>
-  <li *ngFor="let product of products" >
-    <h4>
-      {{product.name | uppercase}}
-    </h4>
-    <div><span>ID: </span> {{product.id}} </div>
-    <div><span>Categories: </span> {{product.categories.join(", ")}} </div>
-    <div><span>Price: </span> {{product.price}} </div>
-    <div><span>Date: </span> {{product.date}} </div>
-    <button 
-      class="delete" 
-      title="delete product"
-      (click)="delete(product)"
-    >Delete</button>
-    
-    <a routerLink="/edit/{{product.id}}">Edit</a>
-  </li>
-</ul>
-<a routerLink="/new">ADD Product</a>
+        <button 
+          class="delete" 
+          title="delete product"
+          (click)="delete(product)"
+        >Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
