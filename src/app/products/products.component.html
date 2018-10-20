@@ -5,10 +5,17 @@
     <h4>
       {{product.name | uppercase}}
     </h4>
-    <div><span>ID: </span> {{product.sku}} </div>
+    <div><span>ID: </span> {{product.id}} </div>
     <div><span>Categories: </span> {{product.categories.join(", ")}} </div>
     <div><span>Price: </span> {{product.price}} </div>
     <div><span>Date: </span> {{product.date}} </div>
+    <button 
+      class="delete" 
+      title="delete product"
+      (click)="delete(product)"
+    >
+      Delete
+    </button>
   </li>
 </ul>
 <a routerLink="/new">ADD Product</a>
