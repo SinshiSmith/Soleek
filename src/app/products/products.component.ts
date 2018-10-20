@@ -16,6 +16,10 @@ export class ProductsComponent implements OnInit {
     this.ProductsService.getProducts()
       .subscribe(products => this.products = products);
   }
+  delete(product: Product): void {
+    this.products = this.products.filter(p => p !== product);
+    this.ProductsService.deleteProduct(product).subscribe();
+  }
   ngOnInit() {
     this.getProducts();
   }
