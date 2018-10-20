@@ -5,7 +5,7 @@ export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const products = [
       {
-        sku: 1,
+        id:1,
         name: "Apple",
         image: "img",
         categories: ["Fruit"],
@@ -13,7 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "21-10-2018"
       },
       {
-        sku: 2,
+        id: 2,
         name: "Orange",
         image: "img",
         categories: ["Fruit"],
@@ -21,7 +21,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "21-10-2018"
       },
       {
-        sku: 3,
+        id: 3,
         name: "Avocado",
         image: "img",
         categories: ["Fruit"],
@@ -29,7 +29,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "21-10-2018"
       },
       {
-        sku: 4,
+        id: 4,
         name: "Banana",
         image: "img",
         categories: ["Fruit"],
@@ -37,7 +37,7 @@ export class InMemoryDataService implements InMemoryDbService {
         date: "21-10-2018"
       },
       {
-        sku: 5,
+        id: 5,
         name: "Strawberries",
         image: "img",
         categories: ["Fruit"],
@@ -50,6 +50,6 @@ export class InMemoryDataService implements InMemoryDbService {
 
 
   genId(products: Product[]): number {
-    return products.length > 0 ? Math.max(...products.map(product => product.sku)) + 1 : 1;
+    return products.length > 0 ? Math.max(...products.map(product => product.id)) + 1 : 1;
   }
 }
