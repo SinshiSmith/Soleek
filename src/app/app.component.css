@@ -1,0 +1,10 @@
+.logo{
+  text-decoration: none;
+  color: #25AAE1;
+}
+.logo > span {
+  color: #ED217C;
+}
+.mix {
+  color: #703680!important;
+}
