@@ -13,9 +13,9 @@
       class="delete" 
       title="delete product"
       (click)="delete(product)"
-    >
-      Delete
-    </button>
+    >Delete</button>
+    
+    <a routerLink="/edit/{{product.id}}">Edit</a>
   </li>
 </ul>
 <a routerLink="/new">ADD Product</a>
