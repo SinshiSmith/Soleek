@@ -10,7 +10,7 @@ export class InMemoryDataService implements InMemoryDbService {
         image: "img",
         categories: ["Fruit"],
         price: 10,
-        date: "21-10-2018"
+        date: "2018-10-19"
       },
       {
         id: 2,
@@ -18,7 +18,7 @@ export class InMemoryDataService implements InMemoryDbService {
         image: "img",
         categories: ["Fruit"],
         price: 10,
-        date: "21-10-2018"
+        date: "2018-10-19"
       },
       {
         id: 3,
@@ -26,7 +26,7 @@ export class InMemoryDataService implements InMemoryDbService {
         image: "img",
         categories: ["Fruit"],
         price: 10,
-        date: "21-10-2018"
+        date: "2018-10-19"
       },
       {
         id: 4,
@@ -34,7 +34,7 @@ export class InMemoryDataService implements InMemoryDbService {
         image: "img",
         categories: ["Fruit"],
         price: 10,
-        date: "21-10-2018"
+        date: "2018-10-19"
       },
       {
         id: 5,
@@ -42,7 +42,7 @@ export class InMemoryDataService implements InMemoryDbService {
         image: "img",
         categories: ["Fruit"],
         price: 10,
-        date: "21-10-2018"
+        date: "2018-10-19"
       },
     ];
     return {products};
