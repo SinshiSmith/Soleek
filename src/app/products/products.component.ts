@@ -17,6 +17,7 @@ export class ProductsComponent implements OnInit {
       .subscribe(products => this.products = products);
   }
   delete(product: Product): void {
+    if (!confirm(`are you sure you want to delete ${product.name}`)) {return};
     this.products = this.products.filter(p => p !== product);
     this.ProductsService.deleteProduct(product).subscribe();
   }
