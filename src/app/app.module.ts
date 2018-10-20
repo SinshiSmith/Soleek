@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NewProductComponent } from './new-product/new-product.component';
+import { EdtProductComponent } from './edt-product/edt-product.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    NewProductComponent
+    NewProductComponent,
+    EdtProductComponent
   ],
   imports: [
     BrowserModule,
